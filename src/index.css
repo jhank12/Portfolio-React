@@ -24,13 +24,19 @@ h2 {
 h3 {
   color: #dedede;
 
-  font-size: 2rem;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.75rem;
   font-weight: 500;
 }
 
 .siteContainer {
   max-width: 1300px;
   margin: 0 auto;
+  width: 90%;
 }
 
 .landingSection {
@@ -114,6 +120,7 @@ button {
 .contentSection {
   padding: 50px 0;
   position: relative;
+  margin-bottom: 50px;
 }
 
 /* skills */
@@ -128,8 +135,10 @@ button {
 .skillsList {
   display: flex;
   gap: 35px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
+
+
 
 .skillIconContainer {
   align-items: center;

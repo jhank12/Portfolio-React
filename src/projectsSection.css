@@ -3,13 +3,17 @@
   gap: 40px;
   justify-content: center;
   margin: 0 auto;
-  width: 80%;
+  width: 85%;
 }
 
 .projectsList {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
   overflow-y: scroll;
   max-height: 1100px;
   min-height: 800px;
+  width: 70%;
 }
 
 .projectsNav {
@@ -41,11 +45,18 @@
 }
 
 .projectImageGallery {
-  background-color: #272727;
+  /* background-color: #272727; */
   border-radius: 10px;
   margin-top: 5px;
-  width: 80%;
+  /* width: 80%; */
   height: 400px;
+}
+
+.projectImageGallery img {
+  z-index: 10;
+  /* aspect-ratio: 16/9; */
+  /* height: 100%; */
+  width: 100%;
 }
 
 /* create style for display flex row and flex col */
@@ -57,9 +68,16 @@
   gap: 22px;
 }
 
+.projectDescription {
+  margin: 15px 0;
+}
+
 .gray-dark {
   color: #9c9c9c;
+}
 
+.font-secondary {
+  color: #bbbbbb;
 }
 
 .projectActions a {
@@ -71,7 +89,6 @@
 }
 
 .project p {
-   font-weight: 400;
+  font-weight: 400;
   font-size: 1.1rem;
-
 }

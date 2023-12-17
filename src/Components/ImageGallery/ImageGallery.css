@@ -1,0 +1,47 @@
+.projectImageGallery {
+  height: 100%;
+  height: fit-content;
+}
+
+.imgContainer {
+  position: relative;
+}
+
+.imgContainer img {
+  border-radius: 8px;
+  position: relative;
+}
+
+.imgContainer button {
+  background-color: transparent;
+  /* background-color: blue; */
+  border-radius: 0;
+
+  height: 100%;
+  position: absolute;
+  z-index: 11;
+}
+
+.imgContainer button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.imgContainer button:last-of-type {
+  right: 0;
+}
+
+.smallImages {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 15px;
+  margin-top: 15px;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.smallImages img {
+  border-radius: 5px;
+  cursor: pointer;
+  /* flex: 1; */
+  width: 150px;
+}
