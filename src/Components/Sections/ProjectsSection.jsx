@@ -16,8 +16,9 @@ const ProjectsSection = () => {
         "../src/Images/CalendarImages/calendar_signup1.PNG",
         "../src/Images/CalendarImages/calendar_forgotpassword1.PNG",
       ],
-      site: 'https://calendar-jhank12.netlify.app/#/',
-      code: 'https://github.com/jhank12/Calendar'
+      tech: ["React", "Redux Toolkit", "Firebase"],
+      site: "https://calendar-jhank12.netlify.app/#/",
+      code: "https://github.com/jhank12/Calendar",
     },
     {
       name: "Shopping Cart",
@@ -28,8 +29,10 @@ const ProjectsSection = () => {
         "../src/Images/ShoppingCart/cart_2.PNG",
         "../src/Images/ShoppingCart/cart_checkout.PNG",
       ],
-      site: 'https://jhank12-shopping-cart.netlify.app/',
-      code: 'https://github.com/jhank12/Shopping-Cart'
+      tech: ["React", "TypeScript", "Redux Toolkit"],
+
+      site: "https://jhank12-shopping-cart.netlify.app/",
+      code: "https://github.com/jhank12/Shopping-Cart",
     },
     {
       name: "Tip Calculator",
@@ -38,8 +41,10 @@ const ProjectsSection = () => {
         "../src/Images/TipCalculator/calculator_main.PNG",
         "../src/Images/TipCalculator/calculator_2.PNG",
       ],
-      site: 'https://jhank12.github.io/Tip-Calculator/',
-      code: 'https://github.com/jhank12/Tip-Calculator'
+      tech: ["HTML", "CSS", "JavaScript"],
+
+      site: "https://jhank12.github.io/Tip-Calculator/",
+      code: "https://github.com/jhank12/Tip-Calculator",
     },
     {
       name: "Pixel Art Editor",
@@ -49,8 +54,10 @@ const ProjectsSection = () => {
         "../src/Images/PixelArtEditor/editor2.PNG",
         "../src/Images/PixelArtEditor/editor3.PNG",
       ],
-      site: 'https://jhank12.github.io/Pixel-Art-Editor/',
-      code: 'https://github.com/jhank12/Pixel-Art-Editor'
+      tech: ["HTML", "CSS", "JavaScript"],
+
+      site: "https://jhank12.github.io/Pixel-Art-Editor/",
+      code: "https://github.com/jhank12/Pixel-Art-Editor",
     },
   ];
 
@@ -62,18 +69,18 @@ const ProjectsSection = () => {
 
       <div className="projectsContainer">
         {/* left side navigation */}
-        <nav className="projectsNav">
+        {/* <nav className="projectsNav">
           <ul>
             <li onClick={() => setLink("calendar")}>Calendar</li>
             <li onClick={() => setLink("shoppingCart")}>E-Commerce</li>
             <li onClick={() => setLink("calculator")}>Tip Calculator</li>
             <li onClick={() => setLink("pixelArt")}>Pixel Art Editor</li>
           </ul>
-        </nav>
+        </nav> */}
 
         <div className="projectsList">
           {testArr.map((project) => {
-            const { name, id, images, site, code } = project;
+            const { name, id, images, tech: techArr, site, code } = project;
 
             return (
               <div key={id} className="project" id={id}>
@@ -95,13 +102,20 @@ const ProjectsSection = () => {
                 </div>
 
                 <p className="gray-dark">
-                  Technology used: HTML, CSS, Javascript
+                  Technology used: {" "}
+                  {techArr.map((tech) => {
+                    return <strong key={tech}>{tech}, {" "}</strong> ;
+                  })}
                 </p>
 
                 <div className="projectActions">
                   <button>Live Site</button>
-                  <a href={site} rel="noreferrer" target="_blank">Live Site</a>
-                  <a href={code} rel="noreferrer" target="_blank">Source Code</a>
+                  <a href={site} rel="noreferrer" target="_blank">
+                    Live Site
+                  </a>
+                  <a href={code} rel="noreferrer" target="_blank">
+                    Source Code
+                  </a>
                 </div>
               </div>
             );

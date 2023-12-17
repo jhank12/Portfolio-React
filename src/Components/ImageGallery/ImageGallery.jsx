@@ -7,10 +7,10 @@ const ImageGallery = ({ images }) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    if (count > images.length) {
+    if (count === images.length) {
       setCount(0);
     } else if (count < 0) {
-      setCount(images.length);
+      setCount(images.length - 1);
     }
   }, [count]);
 
