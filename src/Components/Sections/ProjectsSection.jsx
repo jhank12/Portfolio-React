@@ -118,7 +118,7 @@ const ProjectsSection = () => {
               const { name, id } = item;
 
               return (
-                <li>
+                <li key={id}>
                   <a onClick={() => handleScroll(id)}>{name}</a>
                 </li>
               );
