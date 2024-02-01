@@ -18,23 +18,24 @@ const ImageGallery = ({ images }) => {
     <div className="projectImageGallery">
       <div className="imgContainer">
         <button onClick={() => setCount((count) => count - 1)}>
-          {/* Decrement */}
         </button>
+
         {images?.map((img, idx) => {
           if (idx === count) {
             return <img key={img} src={img} />;
           }
         })}
+
+
         <button onClick={() => setCount((count) => count + 1)}>
-          {/* Increment */}
         </button>
       </div>
 
-      <div className="smallImages">
+      {/* <div className="smallImagesContainer">
         {images?.map((img, idx) => {
           return <img key={img} src={img} onClick={() => setCount(idx)} />;
         })}
-      </div>
+      </div> */}
     </div>
   );
 };

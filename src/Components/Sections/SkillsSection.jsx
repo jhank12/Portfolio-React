@@ -8,7 +8,7 @@ const SkillsSection = () => {
       { icon: <i className="devicon-css3-plain colored"></i>, skill: "CSS" },
       {
         icon: <i className="devicon-javascript-plain colored"></i>,
-        skill: "Javascript",
+        skill: "JavaScript",
       },
       {
         icon: <i className="devicon-react-original colored"></i>,
@@ -30,7 +30,7 @@ const SkillsSection = () => {
     experience: [
       {
         icon: <i className="devicon-typescript-plain colored"></i>,
-        skill: "Typescript",
+        skill: "TypeScript",
       },
       { icon: <i className="devicon-swift-plain colored"></i>, skill: "Swift" },
       {

@@ -3,18 +3,18 @@
   gap: 40px;
   justify-content: center;
   margin: 0 auto;
-  margin-top: 50px;
-  width: 85%;
+  margin-top: 20px;
+  /* width: 85%; */
 }
 
 .projectsList {
   display: flex;
   flex-direction: column;
-  gap: 100px;
-  overflow-y: scroll;
-  max-height: 1100px;
-  min-height: 800px;
-  width: 85%;
+  gap: 150px;
+  /* overflow-y: scroll; */
+  /* max-height: 1100px; */
+  /* min-height: 800px; */
+  /* width: 85%; */
 }
 
 .projectsNav {
@@ -41,9 +41,27 @@
 
 .project {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  /* flex-direction: column; */
+  gap: 35px;
+  padding-right: 80px;
+
 }
+
+.project:nth-of-type(even) {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-left: 80px;
+  padding-right: 0;
+
+  gap: 25px;
+}
+
+
+.project > * {
+  flex: 1;
+}
+
+
 
 .projectImageGallery {
   /* background-color: #272727; */
@@ -51,13 +69,18 @@
   margin-top: 5px;
   /* width: 80%; */
   height: 400px;
+  /* flex: 1.25; */
+}
+
+.project:nth-of-type(even) .projectImageGallery {
+  flex: 1.1;
 }
 
 .projectImageGallery img {
   z-index: 10;
   /* aspect-ratio: 16/9; */
   /* height: 100%; */
-  width: 100%;
+  /* width: 100%; */
 }
 
 /* create style for display flex row and flex col */
@@ -82,7 +105,12 @@
 }
 
 .projectDescription {
-  margin: 5px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  /* margin: 5px 0; */
+  /* padding: 50px 0 0 0; */
 }
 
 .projectDescription p {
@@ -95,6 +123,10 @@
 
 .font-secondary {
   color: #bbbbbb;
+}
+
+.projectActions {
+  margin-top: 15px;
 }
 
 .projectActions a:last-of-type {

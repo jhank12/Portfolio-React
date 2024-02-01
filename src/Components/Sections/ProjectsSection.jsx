@@ -10,6 +10,24 @@ const ProjectsSection = () => {
   const pixelArtRef = useRef(null);
 
   const testArr = [
+    // {
+    //   name: "Calendar",
+    //   id: "calendar",
+    //   images: [
+    //     "../src/Images/CalendarImages/calendar_main2.JPG",
+    //     "../src/Images/CalendarImages/calendar_eventview1.PNG",
+    //     "../src/Images/CalendarImages/calendar_addEvent1.JPG",
+    //     "../src/Images/CalendarImages/calendar_login1.PNG",
+    //     "../src/Images/CalendarImages/calendar_signup1.PNG",
+    //     "../src/Images/CalendarImages/calendar_forgotpassword1.PNG",
+    //   ],
+    //   description:
+    //     "Users can create an account and add custom events to the calendar. Any changes to the calendar are saved and updated in real time with the Firestore database.",
+    //   tech: ["React", "Redux Toolkit", "Firebase"],
+    //   site: "https://calendar-jhank12.netlify.app/#/",
+    //   code: "https://github.com/jhank12/Calendar",
+    //   ref: calendarRef,
+    // },
     {
       name: "Calendar",
       id: "calendar",
@@ -21,8 +39,7 @@ const ProjectsSection = () => {
         "../src/Images/CalendarImages/calendar_signup1.PNG",
         "../src/Images/CalendarImages/calendar_forgotpassword1.PNG",
       ],
-      description:
-        "Users can create an account and add custom events to the calendar. Any changes to the calendar are saved and updated in realtime with the Firestore database.",
+      description: "This is a calendar application that allows users to create custom events. All events have CRUD functionality and any changes are updated in real time on a Firestore Database. All accounts are created using Firebase Authentication.",
       tech: ["React", "Redux Toolkit", "Firebase"],
       site: "https://calendar-jhank12.netlify.app/#/",
       code: "https://github.com/jhank12/Calendar",
@@ -70,7 +87,7 @@ const ProjectsSection = () => {
         "../src/Images/PixelArtEditor/editor3.PNG",
       ],
       description:
-        "Fake e-commerce site with products that users can choose a quantity of and add to their cart.",
+        " Simple pixel art editor that allows users to select a grid size and draw pixel art. The selected grid size is calculated with JavaScript and displayed using the HTML Canvas element",
 
       tech: ["HTML", "CSS", "JavaScript"],
 
@@ -111,8 +128,7 @@ const ProjectsSection = () => {
 
       <div className="projectsContainer">
         {/* left side navigation */}
-        <nav className="projectsNav">
-          {/* render dynamically from arr using id */}
+        {/* <nav className="projectsNav">
           <ul>
             {testArr.map((item) => {
               const { name, id } = item;
@@ -124,7 +140,7 @@ const ProjectsSection = () => {
               );
             })}
           </ul>
-        </nav>
+        </nav> */}
 
         <div className="projectsList">
           {testArr.map((project) => {
@@ -141,41 +157,40 @@ const ProjectsSection = () => {
 
             return (
               <div key={id} className="project" id={id} ref={ref}>
-                <div>
-                  <h2>{name}</h2>
-                </div>
-
                 <ImageGallery images={images} />
 
                 <div className="projectDescription">
                   {/* <h4>Description</h4> */}
                   {/* <br /> */}
+                  <h3>{name}</h3>
                   <p className="font-secondary">{description}</p>
-                </div>
 
-                <p className="gray-dark">
-                  Technology used:{" "}
-                  {techArr.map((tech) => {
-                    if (techArr.indexOf(tech) !== techArr.length - 1) {
-                      return <strong key={tech}> {tech}, </strong>;
-                    } else {
-                      return <strong key={tech}> {tech} </strong>;
-                    }
-                  })}
-                </p>
+                  <div>
+                    <p className="gray-dark">
+                      Technology used:{" "}
+                      {techArr.map((tech) => {
+                        if (techArr.indexOf(tech) !== techArr.length - 1) {
+                          return <strong key={tech}> {tech}, </strong>;
+                        } else {
+                          return <strong key={tech}> {tech} </strong>;
+                        }
+                      })}
+                    </p>
 
-                <div className="projectActions">
-                  <a
-                    className="linkBtn"
-                    href={site}
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    Live Site
-                  </a>
-                  <a href={code} rel="noreferrer" target="_blank">
-                    Source Code
-                  </a>
+                    <div className="projectActions">
+                      <a
+                        className="linkBtn"
+                        href={site}
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        Live Site
+                      </a>
+                      <a href={code} rel="noreferrer" target="_blank">
+                        Source Code
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             );
