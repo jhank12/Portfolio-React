@@ -3,31 +3,15 @@ import React, { useRef, useState } from "react";
 import "/src/projectsSection.css";
 import ImageGallery from "../ImageGallery/ImageGallery";
 
-const ProjectsSection = () => {
+const ProjectsSection = ({ id }) => {
   const calendarRef = useRef(null);
   const cartRef = useRef(null);
   const calculatorRef = useRef(null);
   const pixelArtRef = useRef(null);
+  const portfolioRef = useRef(null);
 
   const testArr = [
-    // {
-    //   name: "Calendar",
-    //   id: "calendar",
-    //   images: [
-    //     "../src/Images/CalendarImages/calendar_main2.JPG",
-    //     "../src/Images/CalendarImages/calendar_eventview1.PNG",
-    //     "../src/Images/CalendarImages/calendar_addEvent1.JPG",
-    //     "../src/Images/CalendarImages/calendar_login1.PNG",
-    //     "../src/Images/CalendarImages/calendar_signup1.PNG",
-    //     "../src/Images/CalendarImages/calendar_forgotpassword1.PNG",
-    //   ],
-    //   description:
-    //     "Users can create an account and add custom events to the calendar. Any changes to the calendar are saved and updated in real time with the Firestore database.",
-    //   tech: ["React", "Redux Toolkit", "Firebase"],
-    //   site: "https://calendar-jhank12.netlify.app/#/",
-    //   code: "https://github.com/jhank12/Calendar",
-    //   ref: calendarRef,
-    // },
+
     {
       name: "Calendar",
       id: "calendar",
@@ -39,7 +23,8 @@ const ProjectsSection = () => {
         "../src/Images/CalendarImages/calendar_signup1.PNG",
         "../src/Images/CalendarImages/calendar_forgotpassword1.PNG",
       ],
-      description: "This is a calendar application that allows users to create custom events. All events have CRUD functionality and any changes are updated in real time on a Firestore Database. All accounts are created using Firebase Authentication.",
+      description:
+        "This is a calendar application that allows users to create custom events. All events have CRUD functionality and any changes are updated in real time on a Firestore Database. All accounts are created using Firebase Authentication.",
       tech: ["React", "Redux Toolkit", "Firebase"],
       site: "https://calendar-jhank12.netlify.app/#/",
       code: "https://github.com/jhank12/Calendar",
@@ -78,6 +63,7 @@ const ProjectsSection = () => {
       code: "https://github.com/jhank12/Tip-Calculator",
       ref: calculatorRef,
     },
+
     {
       name: "Pixel Art Editor",
       id: "pixelArt",
@@ -95,53 +81,28 @@ const ProjectsSection = () => {
       code: "https://github.com/jhank12/Pixel-Art-Editor",
       ref: pixelArtRef,
     },
+    {
+      name: "Portfolio Website",
+      id: "portfolio",
+      images: [
+        "../src/Images/PixelArtEditor/editor_main.PNG",
+        "../src/Images/PixelArtEditor/editor2.PNG",
+        "../src/Images/PixelArtEditor/editor3.PNG",
+      ],
+      description: "",
+      tech: [],
+
+      site: "",
+      code: "",
+      ref: portfolioRef,
+    },
   ];
 
-  const [link, setLink] = useState();
-
-  let ref = useRef(null);
-
-  function handleScroll(id) {
-    console.log(id);
-    switch (id) {
-      case "calendar":
-        ref = calendarRef;
-        break;
-      case "shoppingCart":
-        ref = cartRef;
-        break;
-
-      case "calculator":
-        ref = calculatorRef;
-        break;
-      case "pixelArt":
-        ref = pixelArtRef;
-        break;
-    }
-
-    ref.current?.scrollIntoView({ behavior: "smooth" });
-  }
-
   return (
-    <section className="contentSection">
+    <section className="contentSection" id={id}>
       <h2>Projects</h2>
 
       <div className="projectsContainer">
-        {/* left side navigation */}
-        {/* <nav className="projectsNav">
-          <ul>
-            {testArr.map((item) => {
-              const { name, id } = item;
-
-              return (
-                <li key={id}>
-                  <a onClick={() => handleScroll(id)}>{name}</a>
-                </li>
-              );
-            })}
-          </ul>
-        </nav> */}
-
         <div className="projectsList">
           {testArr.map((project) => {
             const {
@@ -160,12 +121,12 @@ const ProjectsSection = () => {
                 <ImageGallery images={images} />
 
                 <div className="projectDescription">
-                  {/* <h4>Description</h4> */}
-                  {/* <br /> */}
                   <h3>{name}</h3>
-                  <p className="font-secondary">{description}</p>
 
-                  <div>
+                  
+
+                  <p className="font-secondary">{description}</p>
+                  <div className="technology_actionsContainer">
                     <p className="gray-dark">
                       Technology used:{" "}
                       {techArr.map((tech) => {

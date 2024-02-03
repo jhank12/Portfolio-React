@@ -4,17 +4,13 @@
   justify-content: center;
   margin: 0 auto;
   margin-top: 20px;
-  /* width: 85%; */
 }
 
 .projectsList {
   display: flex;
   flex-direction: column;
   gap: 150px;
-  /* overflow-y: scroll; */
-  /* max-height: 1100px; */
-  /* min-height: 800px; */
-  /* width: 85%; */
+
 }
 
 .projectsNav {
@@ -41,35 +37,27 @@
 
 .project {
   display: flex;
-  /* flex-direction: column; */
   gap: 35px;
-  padding-right: 80px;
-
+  padding-right: 60px;
 }
 
 .project:nth-of-type(even) {
   display: flex;
   flex-direction: row-reverse;
-  padding-left: 80px;
+  padding-left: 60px;
   padding-right: 0;
 
   gap: 25px;
 }
 
-
 .project > * {
   flex: 1;
 }
 
-
-
 .projectImageGallery {
-  /* background-color: #272727; */
   border-radius: 10px;
   margin-top: 5px;
-  /* width: 80%; */
   height: 400px;
-  /* flex: 1.25; */
 }
 
 .project:nth-of-type(even) .projectImageGallery {
@@ -78,19 +66,10 @@
 
 .projectImageGallery img {
   z-index: 10;
-  /* aspect-ratio: 16/9; */
-  /* height: 100%; */
-  /* width: 100%; */
+
 }
 
 /* create style for display flex row and flex col */
-
-.projectActions {
-  align-items: center;
-  display: flex;
-
-  gap: 22px;
-}
 
 .linkBtn {
   border-radius: 50px;
@@ -109,8 +88,6 @@
   flex-direction: column;
   justify-content: center;
   gap: 15px;
-  /* margin: 5px 0; */
-  /* padding: 50px 0 0 0; */
 }
 
 .projectDescription p {
@@ -125,8 +102,18 @@
   color: #bbbbbb;
 }
 
+
+.technology_actionsContainer {
+  margin-top: 12px;
+}
+
+
 .projectActions {
-  margin-top: 15px;
+  align-items: center;
+  display: flex;
+
+  gap: 22px;
+  margin-top: 18px;
 }
 
 .projectActions a:last-of-type {
@@ -140,4 +127,18 @@
 .project p {
   font-weight: 400;
   font-size: 1.1rem;
+}
+
+/* queries for project section */
+
+@media (max-width: 1000px) {
+  .project {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .project:nth-of-type(even) {
+    flex-direction: column;
+    padding-left: 0;
+  }
 }

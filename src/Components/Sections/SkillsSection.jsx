@@ -1,6 +1,6 @@
 import React from "react";
 
-const SkillsSection = () => {
+const SkillsSection = ({id}) => {
   const skills = {
     proficient: [
       { icon: <i className="devicon-html5-plain colored"></i>, skill: "HTML" },
@@ -42,7 +42,7 @@ const SkillsSection = () => {
   };
 
   return (
-    <section className="contentSection">
+    <section className="contentSection" id={id}>
       <h2>Skills</h2>
 
 
