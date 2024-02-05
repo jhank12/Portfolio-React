@@ -3,7 +3,7 @@ export const projectsArr = [
     name: "Calendar",
     id: "calendar",
     images: [
-      "../src/Images/CalendarImages/calendar_main2.JPG",
+      "../../src/Images/CalendarImages/calendar_main2.JPG",
       "../src/Images/CalendarImages/calendar_eventview1.PNG",
       "../src/Images/CalendarImages/calendar_addEvent1.JPG",
       "../src/Images/CalendarImages/calendar_login1.PNG",
