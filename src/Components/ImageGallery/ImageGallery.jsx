@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 
 import "./ImageGallery.css";
 
-import "../../Images"
 
 
 const ImageGallery = ({ name, images }) => {
