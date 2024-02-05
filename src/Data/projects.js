@@ -1,10 +1,5 @@
 
-import calendar_main2 from "../Images"
-import calendar_eventview1 from "../Images"
-import calendar_addEvent1 from "../Images"
-import calendar_login1 from "../Images"
-import calendar_signup1 from "../Images"
-import calendar_forgotpassword1 from "../Images"
+
 
 
 export const projectsArr = [
