@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { CSSTransition } from "react-transition-group";
 
 import pdf from "E:/Web Development/React Projects/Portfolio-React/src/Resume/Joshua Hankins Resume.pdf";
