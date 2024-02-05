@@ -7,8 +7,8 @@ import calendarImg6 from "../Images/CalendarImages/calendar_forgotpassword1.PNG"
 
 import shoppingCartImg1 from "../Images/ShoppingCart/cart_main2.PNG";
 import shoppingCartImg2 from "../Images/ShoppingCart/cart_cartModal.PNG";
-import shoppingCartImg3 from "../../Images/ShoppingCart/cart_2.PNG";
-import shoppingCartImg4 from "../../Images/ShoppingCart/cart_checkout.PNG";
+import shoppingCartImg3 from "../Images/ShoppingCart/cart_2.PNG";
+import shoppingCartImg4 from "../Images/ShoppingCart/cart_checkout.PNG";
 
 import tipCalculatorImg1 from "../Images/TipCalculator/calculator_main.PNG";
 import tipCalculatorImg2 from "../Images/TipCalculator/calculator_2.PNG";
