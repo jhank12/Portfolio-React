@@ -2,12 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 
 import "./ImageGallery.css";
 
-import calendarImg1 from "../../Images/calendar_main2.JPG";
-import calendarImg2 from "../../Images/calendar_eventview1.PNG";
-import calendarImg3 from "../../Images/calendar_addEvent1.JPG";
-import calendarImg4 from "../../Images/calendar_login1.PNG";
-import calendarImg5 from "../../Images/calendar_signup1.PNG";
-import calendarImg6 from "../../Images/calendar_forgotpassword1.PNG";
+
 
 const ImageGallery = ({ name, images }) => {
   const [count, setCount] = useState(0);

@@ -1,18 +1,32 @@
 
+import calendarImg1 from "../Images/calendar_main2.JPG";
+import calendarImg2 from "../Images/calendar_eventview1.PNG";
+import calendarImg3 from "../Images/calendar_addEvent1.JPG";
+import calendarImg4 from "../Images/calendar_login1.PNG";
+import calendarImg5 from "../Images/calendar_signup1.PNG";
+import calendarImg6 from "../Images/calendar_forgotpassword1.PNG";
 
-
+// images: [
+//   "../Images/calendar_main2.JPG",
+//   "../Images/calendar_eventview1.PNG",
+//   "../Images/calendar_addEvent1.JPG",
+//   "../Images/calendar_login1.PNG",
+//   "../Images/calendar_signup1.PNG",
+//   "../Images/calendar_forgotpassword1.PNG",
+// ],
 
 export const projectsArr = [
   {
     name: "Calendar",
     id: "calendar",
     images: [
-      "../Images/calendar_main2.JPG",
-      "../Images/calendar_eventview1.PNG",
-      "../Images/calendar_addEvent1.JPG",
-      "../Images/calendar_login1.PNG",
-      "../Images/calendar_signup1.PNG",
-      "../Images/calendar_forgotpassword1.PNG",
+      `${calendarImg1}`,
+      `${calendarImg2}`,
+      `${calendarImg3}`,
+      `${calendarImg4}`,
+      `${calendarImg5}`,
+      `${calendarImg6}`,
+
     ],
     description:
       "This is a calendar application that allows users to create custom events. All events have CRUD functionality and any changes are updated in real time on a Firestore Database. All accounts are created using Firebase Authentication.",
