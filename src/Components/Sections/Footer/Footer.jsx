@@ -1,6 +1,7 @@
 import React from "react";
 
-import pdf from "E:/Web Development/React Projects/Portfolio-React/src/Resume/Joshua Hankins Resume.pdf";
+import pdf from "E:/Web Development/React Projects/Portfolio-React/dist/assets/Joshua Hankins Resume-X9GOmyty.pdf";
+
 
 import './footer.css'
 
