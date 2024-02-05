@@ -3,7 +3,6 @@ import React, { useState, useEffect, useRef } from "react";
 import "./ImageGallery.css";
 
 
-import image from "../../Images/CalendarImages/calendar_addEvent.JPG";
 
 
 const ImageGallery = ({ name, images }) => {
