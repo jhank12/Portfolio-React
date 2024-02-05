@@ -10,7 +10,6 @@
   display: flex;
   flex-direction: column;
   gap: 150px;
-
 }
 
 .projectsNav {
@@ -56,9 +55,10 @@
 
 .projectImageGallery {
   border-radius: 10px;
-  margin-top: 5px;
-  height: 400px;
+  /* height: 400px; */
+  /* flex: 1; */
 }
+
 
 .project:nth-of-type(even) .projectImageGallery {
   flex: 1.1;
@@ -66,7 +66,6 @@
 
 .projectImageGallery img {
   z-index: 10;
-
 }
 
 /* create style for display flex row and flex col */
@@ -81,6 +80,10 @@
   font-weight: 500;
   font-size: 0.95rem;
   padding: 15px 30px;
+}
+
+.linkBtn:hover {
+  background-color: #99acb9;
 }
 
 .projectDescription {
@@ -102,11 +105,9 @@
   color: #bbbbbb;
 }
 
-
 .technology_actionsContainer {
   margin-top: 12px;
 }
-
 
 .projectActions {
   align-items: center;
@@ -142,3 +143,11 @@
     padding-left: 0;
   }
 }
+
+
+/* todo */
+
+/* title
+   mobile nav
+   fix css (spacing that is using px use rem)
+*/

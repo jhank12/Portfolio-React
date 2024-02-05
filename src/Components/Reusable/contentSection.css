@@ -1,0 +1,8 @@
+.contentSection {
+   display: flex;
+   flex-direction: column;
+   gap: 60px;
+   padding: 75px 0;
+   position: relative;
+   margin-bottom: 100px;
+ }

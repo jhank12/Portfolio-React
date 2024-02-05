@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 // import styles from './ImageGallery.module.css';
 import "./ImageGallery.css";
 
-const ImageGallery = ({ images }) => {
+const ImageGallery = ({ name, images }) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -16,26 +16,72 @@ const ImageGallery = ({ images }) => {
 
   return (
     <div className="projectImageGallery">
+      {/* <div className="imgContainer">
+        <swiper-container
+          slides-per-view="1"
+          navigation="true"
+          scrollbar="false"
+          pagination="false"
+        >
+          {images.map((img) => {
+            return (
+              <swiper-slide
+                key={img}
+              >
+                <img src={img} />
+              </swiper-slide>
+            );
+          })}
+        </swiper-container>
+      </div> */}
+
       <div className="imgContainer">
-        <button onClick={() => setCount((count) => count - 1)}>
-        </button>
+        <div className="imgCounter" onClick={() => setCount((count) => count - 1)}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            fill="currentColor"
+            className="bi bi-chevron-left"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fillRule="evenodd"
+              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+            />
+          </svg>
+        </div>
 
         {images?.map((img, idx) => {
           if (idx === count) {
-            return <img key={img} src={img} />;
+            return (
+              <>
+                <img
+                  key={img}
+                  src={img}
+                  alt={`${name.toLowerCase()}-project`}
+                />
+              </>
+            );
           }
         })}
 
-
-        <button onClick={() => setCount((count) => count + 1)}>
-        </button>
+        <div className="imgCounter" onClick={() => setCount((count) => count + 1)}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            fill="currentColor"
+            className="bi bi-chevron-right"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fillRule="evenodd"
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+            />
+          </svg>
+        </div>
       </div>
-
-      {/* <div className="smallImagesContainer">
-        {images?.map((img, idx) => {
-          return <img key={img} src={img} onClick={() => setCount(idx)} />;
-        })}
-      </div> */}
     </div>
   );
 };
