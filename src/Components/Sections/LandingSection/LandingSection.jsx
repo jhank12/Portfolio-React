@@ -2,7 +2,7 @@ import React from 'react'
 
 import Navbar from '../../Navbar/Navbar'
 
-import './landingSection.css'
+import './LandingSection.css'
 
 const LandingSection = ({scrollToElement}) => {
   return (

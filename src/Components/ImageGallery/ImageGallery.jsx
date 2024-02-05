@@ -1,14 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 
-// import styles from './ImageGallery.module.css';
 import "./ImageGallery.css";
 
-import { CSSTransition } from "react-transition-group";
 
 const ImageGallery = ({ name, images }) => {
   const [count, setCount] = useState(0);
 
-  const nodeRef = useRef(null);
 
   useEffect(() => {
     if (count === images.length) {
