@@ -20,18 +20,6 @@
   width: 100%;
 }
 
-.swiperContainer {
-  position: relative;
-  height: auto;
-  width: 100%;
-}
-
-.swiper-slide {
-  position: relative;
-
-  height: auto;
-}
-
 .imgCounter {
   background-color: transparent;
   border-radius: 0;

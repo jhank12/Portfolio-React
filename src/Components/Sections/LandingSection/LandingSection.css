@@ -7,7 +7,7 @@
 }
 
 .landingSection h1 {
-  font-size: 3.15rem;
+  font-size: 3.25rem;
 }
 
 .landingContent {
@@ -18,5 +18,5 @@
 }
 
 .landingContent button {
-  margin-top: 15px !important;
+  margin-top: 1rem !important;
 }

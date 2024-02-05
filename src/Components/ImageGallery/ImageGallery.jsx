@@ -1,10 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 // import styles from './ImageGallery.module.css';
 import "./ImageGallery.css";
 
+import { CSSTransition } from "react-transition-group";
+
 const ImageGallery = ({ name, images }) => {
   const [count, setCount] = useState(0);
+
+  const nodeRef = useRef(null);
 
   useEffect(() => {
     if (count === images.length) {
@@ -16,27 +20,13 @@ const ImageGallery = ({ name, images }) => {
 
   return (
     <div className="projectImageGallery">
-      {/* <div className="imgContainer">
-        <swiper-container
-          slides-per-view="1"
-          navigation="true"
-          scrollbar="false"
-          pagination="false"
-        >
-          {images.map((img) => {
-            return (
-              <swiper-slide
-                key={img}
-              >
-                <img src={img} />
-              </swiper-slide>
-            );
-          })}
-        </swiper-container>
-      </div> */}
+    
 
       <div className="imgContainer">
-        <div className="imgCounter" onClick={() => setCount((count) => count - 1)}>
+        <div
+          className="imgCounter"
+          onClick={() => setCount((count) => count - 1)}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="35"
@@ -66,7 +56,10 @@ const ImageGallery = ({ name, images }) => {
           }
         })}
 
-        <div className="imgCounter" onClick={() => setCount((count) => count + 1)}>
+        <div
+          className="imgCounter"
+          onClick={() => setCount((count) => count + 1)}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="35"

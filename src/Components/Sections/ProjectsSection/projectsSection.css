@@ -1,52 +1,30 @@
 .projectsContainer {
   display: flex;
-  gap: 40px;
+  gap: 2.5rem;
   justify-content: center;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 1.25px;
 }
 
 .projectsList {
   display: flex;
   flex-direction: column;
-  gap: 150px;
-}
-
-.projectsNav {
-  margin-top: 35px;
-}
-
-.projectsNav ul {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 120px;
-}
-
-.projectsNav li {
-  color: #9c9c9c;
-  font-weight: 500;
-  font-size: 1.1rem;
-  cursor: pointer;
-}
-
-.projectsNav li:hover {
-  color: #dcdcdc;
+  gap: 8rem;
 }
 
 .project {
   display: flex;
-  gap: 35px;
-  padding-right: 60px;
+  gap: 2.25rem;
+  padding-right: 3.75rem;
 }
 
 .project:nth-of-type(even) {
   display: flex;
   flex-direction: row-reverse;
-  padding-left: 60px;
+  padding-left: 3.75rem;
   padding-right: 0;
 
-  gap: 25px;
+  gap: 1.5rem;
 }
 
 .project > * {
@@ -55,10 +33,7 @@
 
 .projectImageGallery {
   border-radius: 10px;
-  /* height: 400px; */
-  /* flex: 1; */
 }
-
 
 .project:nth-of-type(even) .projectImageGallery {
   flex: 1.1;
@@ -67,8 +42,6 @@
 .projectImageGallery img {
   z-index: 10;
 }
-
-/* create style for display flex row and flex col */
 
 .linkBtn {
   border-radius: 50px;
@@ -79,7 +52,7 @@
   font-family: inherit;
   font-weight: 500;
   font-size: 0.95rem;
-  padding: 15px 30px;
+  padding: 1.1rem 2rem;
 }
 
 .linkBtn:hover {
@@ -90,7 +63,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
 }
 
 .projectDescription p {
@@ -113,8 +86,8 @@
   align-items: center;
   display: flex;
 
-  gap: 22px;
-  margin-top: 18px;
+  gap: 1.3rem;
+  margin-top: 1.1rem;
 }
 
 .projectActions a:last-of-type {
@@ -130,8 +103,6 @@
   font-size: 1.1rem;
 }
 
-/* queries for project section */
-
 @media (max-width: 1000px) {
   .project {
     flex-direction: column;
@@ -143,11 +114,3 @@
     padding-left: 0;
   }
 }
-
-
-/* todo */
-
-/* title
-   mobile nav
-   fix css (spacing that is using px use rem)
-*/

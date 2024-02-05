@@ -64,18 +64,4 @@ export const projectsArr = [
     site: "https://jhank12.github.io/Pixel-Art-Editor/",
     code: "https://github.com/jhank12/Pixel-Art-Editor",
   },
-  {
-    name: "Portfolio Website",
-    id: "portfolio",
-    images: [
-      "../src/Images/PixelArtEditor/editor_main.PNG",
-      "../src/Images/PixelArtEditor/editor2.PNG",
-      "../src/Images/PixelArtEditor/editor3.PNG",
-    ],
-    description: "A website to showcase my skills and projects.",
-    tech: ["React"],
-
-    site: "",
-    code: "",
-  },
 ];
