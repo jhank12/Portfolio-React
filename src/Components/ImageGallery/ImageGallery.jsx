@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 
 import "./ImageGallery.css";
 
+import image from "../../Images/CalendarImages/calendar_addEvent.JPG"
+
 
 const ImageGallery = ({ name, images }) => {
   const [count, setCount] = useState(0);
@@ -45,7 +47,7 @@ const ImageGallery = ({ name, images }) => {
               <>
                 <img
                   key={img}
-                  src={img}
+                  src={image}
                   alt={`${name.toLowerCase()}-project`}
                 />
               </>
