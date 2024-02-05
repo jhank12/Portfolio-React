@@ -1,19 +1,16 @@
-import "../Images/CalendarImages";
-import "../Images/ShoppingCart";
-import "../Images/TipCalculator";
-import "../Images/PixelArtEditor";
+
 
 export const projectsArr = [
   {
     name: "Calendar",
     id: "calendar",
     images: [
-      "../../Images/CalendarImages/calendar_main2.JPG",
-      "../../Images/CalendarImages/calendar_eventview1.PNG",
-      "../../Images/CalendarImages/calendar_addEvent1.JPG",
-      "../../Images/CalendarImages/calendar_login1.PNG",
-      "../../Images/CalendarImages/calendar_signup1.PNG",
-      "../../Images/CalendarImages/calendar_forgotpassword1.PNG",
+      "../../Images/calendar_main2.JPG",
+      "../../Images/calendar_eventview1.PNG",
+      "../../Images/calendar_addEvent1.JPG",
+      "../../Images/calendar_login1.PNG",
+      "../../Images/calendar_signup1.PNG",
+      "../../Images/calendar_forgotpassword1.PNG",
     ],
     description:
       "This is a calendar application that allows users to create custom events. All events have CRUD functionality and any changes are updated in real time on a Firestore Database. All accounts are created using Firebase Authentication.",
