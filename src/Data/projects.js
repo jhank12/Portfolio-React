@@ -1,3 +1,8 @@
+import "../Images/CalendarImages";
+import "../Images/ShoppingCart";
+import "../Images/TipCalculator";
+import "../Images/PixelArtEditor";
+
 export const projectsArr = [
   {
     name: "Calendar",
