@@ -17,33 +17,34 @@ import pixelEditorImg1 from "../Images/PixelArtEditor/editor_main.PNG";
 import pixelEditorImg2 from "../Images/PixelArtEditor/editor2.PNG";
 import pixelEditorImg3 from "../Images/PixelArtEditor/editor3.PNG";
 
+import landingPageImg1 from "../Images/LandingPage/landingPageImage1.png"
+
 export const projectsArr = [
   {
     name: "Calendar",
     id: "calendar",
-    images: [
+    image:
       `${calendarImg1}`,
-      `${calendarImg2}`,
-      `${calendarImg3}`,
-      `${calendarImg4}`,
-      `${calendarImg5}`,
-      `${calendarImg6}`,
-    ],
     description:
       "This is a calendar application that allows users to create custom events. All events have CRUD functionality and any changes are updated in real time on a Firestore Database. All accounts are created using Firebase Authentication.",
     tech: ["React", "Redux Toolkit", "Firebase"],
-    site: "https://calendar-jhank12.netlify.app/#/",
+    site: "https://jhankins-calendar.netlify.app/#/",
     code: "https://github.com/jhank12/Calendar",
+  },
+  {
+    name: "Landing Page",
+    id: "landingPage",
+    image: landingPageImg1,
+    description: "Fully responsive landing page. Project provided by FrontendMentor",
+    tech: ["HTML", "CSS", "JavaScript"],
+    site: "https://jhank12.github.io/landing-page/",
+    code: "https://github.com/jhank12/landing-page"
   },
   {
     name: "Shopping Cart",
     id: "shoppingCart",
-    images: [
+    image:
       `${shoppingCartImg1}`,
-      `${shoppingCartImg2}`,
-      `${shoppingCartImg3}`,
-      `${shoppingCartImg4}`,
-    ],
     description:
       "Fake e-commerce site with products that users can choose a quantity of and add to their cart.",
     tech: ["React", "TypeScript", "Redux Toolkit"],
@@ -54,7 +55,7 @@ export const projectsArr = [
   {
     name: "Tip Calculator",
     id: "calculator",
-    images: [`${tipCalculatorImg1}`, `${tipCalculatorImg2}`],
+    image: `${tipCalculatorImg1}`,
     description:
       "Allows users to input bill amount, number of people and tip percentage to divide the bill evenly.",
 
@@ -67,7 +68,7 @@ export const projectsArr = [
   {
     name: "Pixel Art Editor",
     id: "pixelArt",
-    images: [`${pixelEditorImg1}`, `${pixelEditorImg2}`, `${pixelEditorImg3}`],
+    image: `${pixelEditorImg1}`,
     description:
       " Simple pixel art editor that allows users to select a grid size and draw pixel art. The selected grid size is calculated with JavaScript and displayed using the HTML Canvas element",
 

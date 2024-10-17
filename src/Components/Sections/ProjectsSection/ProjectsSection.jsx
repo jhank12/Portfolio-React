@@ -7,6 +7,7 @@ import ContentSection from "../../Reusable/ContentSection";
 import { projectsArr } from "../../../Data/projects";
 
 const ProjectsSection = () => {
+
   return (
     <ContentSection id={"projects"}>
       <h2>Projects</h2>
@@ -17,7 +18,7 @@ const ProjectsSection = () => {
             const {
               name,
               id,
-              images,
+              image,
               description,
               tech: techArr,
               site,
@@ -27,8 +28,8 @@ const ProjectsSection = () => {
 
             return (
               <div key={id} className="project" id={id} ref={ref}>
-                <ImageGallery name={name} images={images} />
-
+                <ImageGallery name={name} image={image} />
+                {/* <img src={image} alt="" /> */}
                 <div className="projectDescription">
                   <h3>{name}</h3>
 

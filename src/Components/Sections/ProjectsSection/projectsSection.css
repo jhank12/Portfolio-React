@@ -4,7 +4,10 @@
   justify-content: center;
   margin: 0 auto;
   margin-top: 1.25px;
+
+
 }
+
 
 .projectsList {
   display: flex;
@@ -16,6 +19,11 @@
   display: flex;
   gap: 2.25rem;
   padding-right: 3.75rem;
+}
+
+.project img {
+  height: 100%;
+  width: 100%;
 }
 
 .project:nth-of-type(even) {
