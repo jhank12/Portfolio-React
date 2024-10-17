@@ -35,7 +35,7 @@ export const projectsArr = [
     name: "Landing Page",
     id: "landingPage",
     image: landingPageImg1,
-    description: "Fully responsive landing page. Project provided by FrontendMentor",
+    description: "Fully responsive landing page. Project provided by Frontend Mentor",
     tech: ["HTML", "CSS", "JavaScript"],
     site: "https://jhank12.github.io/landing-page/",
     code: "https://github.com/jhank12/landing-page"
