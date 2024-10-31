@@ -5,6 +5,8 @@ import calendarImg4 from "../Images/CalendarImages/calendar_login1.PNG";
 import calendarImg5 from "../Images/CalendarImages/calendar_signup1.PNG";
 import calendarImg6 from "../Images/CalendarImages/calendar_forgotpassword1.PNG";
 
+import ecommerceImg from "../Images/Ecommerce/landing.png"
+
 import shoppingCartImg1 from "../Images/ShoppingCart/cart_main2.PNG";
 import shoppingCartImg2 from "../Images/ShoppingCart/cart_cartModal.PNG";
 import shoppingCartImg3 from "../Images/ShoppingCart/cart_2.PNG";
@@ -20,6 +22,17 @@ import pixelEditorImg3 from "../Images/PixelArtEditor/editor3.PNG";
 import landingPageImg1 from "../Images/LandingPage/landingPageImage1.png"
 
 export const projectsArr = [
+  {
+    name: "Ecommerce",
+    id: "ecommerce",
+    image:
+      `${ecommerceImg}`,
+    description:
+      "A fully responsive ecommerce site that provides a product filter, product screen that allows users to select the product style and a cart and checkout page. All images, and data for this project were provided by GreatFrontend.",
+    tech: ["NextJS", "TypeScript", "Redux Toolkit"],
+    site: "https://jhankins-calendar.netlify.app/#/",
+    code: "https://github.com/jhank12/ecommerce",
+  },
   {
     name: "Calendar",
     id: "calendar",
