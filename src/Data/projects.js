@@ -1,4 +1,4 @@
-import flashcardLandingImg from "../Images/Flashcards/flashcardsLandingImg.PNG";
+import flashcardsLandingImg from "../Images/Flashcards/flashcardsLandingImg.PNG";
 
 import calendarImg1 from "../Images/CalendarImages/calendar_main2.JPG";
 
@@ -10,7 +10,7 @@ export const projectsArr = [
   {
     name: "Flashcards Application",
     id: "flashcard",
-    image: `${flashcardLandingImg}`,
+    image: `${flashcardsLandingImg}`,
     description:
       "This is a fullstack application that allows users to create custom flashcard sets to assist in studying. Users can add, edit and delete their flashcard set if a change needs to be made. All user data is saved and persisted using local storage.",
     tech: ["NextJS", "TypeScript"],
