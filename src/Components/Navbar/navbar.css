@@ -8,6 +8,7 @@
 }
 
 .navIcon {
+  cursor: pointer;
   position: relative;
 }
 
