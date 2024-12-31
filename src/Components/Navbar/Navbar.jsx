@@ -1,9 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { CSSTransition } from "react-transition-group";
 
-
 import pdf from "../../Resume/Joshua Hankins Resume.pdf";
-
 
 import "./navbar.css";
 

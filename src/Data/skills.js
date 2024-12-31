@@ -17,6 +17,8 @@ export const skills = {
       skill: "React",
     },
 
+    { icon: "devicon-nextjs-original-wordmark", skill: "NextJS" },
+
     {
       icon: "devicon-redux-original colored",
       skill: "Redux Toolkit",
@@ -32,8 +34,6 @@ export const skills = {
     { icon: "devicon-figma-plain colored", skill: "Figma" },
   ],
   experience: [
-    { icon: "devicon-nextjs-original-wordmark", skill: "Next.js" },
-
     {
       icon: "devicon-firebase-plain colored",
       skill: "Firebase",
