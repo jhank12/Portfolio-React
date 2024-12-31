@@ -1,4 +1,4 @@
-import flashcardsLandingImg from "../Images/Flashcards/flashcardsLandingImg.PNG";
+import flashcardsLandingImg from "../Images/Flashcards/flashcardsLandingImg.png";
 
 import calendarImg1 from "../Images/CalendarImages/calendar_main2.JPG";
 
