@@ -47,7 +47,7 @@ export const projectsArr = [
       "Fake e-commerce site with products that users can choose a quantity of and add to their cart.",
     tech: ["React", "TypeScript", "Redux Toolkit"],
 
-    site: "https://jhank12-shopping-cart.netlify.app/",
+    site: "https://jhankins-shoppingcart.netlify.app/",
     code: "https://github.com/jhank12/Shopping-Cart",
   },
 ];
