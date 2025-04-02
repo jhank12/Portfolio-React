@@ -35,6 +35,11 @@ export const skills = {
   ],
   experience: [
     {
+      icon: "devicon-angularjs-plain colored",
+      skill: "Angular",
+    },
+
+    {
       icon: "devicon-firebase-plain colored",
       skill: "Firebase",
     },
